@@ -1,0 +1,13 @@
+startup_message off
+maptimeout 5
+altscreen on
+
+hardstatus on
+hardstatus alwayslastline
+hardstatus string "%{.kw}%-w%{= kR}(%{r}%n %t%{-}%{= kR})%?%{= .kw}%+w%? %{.kw}%=%c %d/%m/%Y"
+
+attrcolor b ".I"
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E38;5;%dm'
+defbce "on"
+
+shell -$SHELL

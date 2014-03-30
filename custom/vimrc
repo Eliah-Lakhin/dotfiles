@@ -1,0 +1,39 @@
+" pathogen
+execute pathogen#infect()
+
+" ctrlp
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+let g:ctrlp_map='<c-p>'
+let g:ctrlp_cmd='CtrlP'
+
+" syntax
+syntax on
+set smartindent
+set tabstop=2
+set shiftwidth=2
+set expandtab
+
+" solarized
+let g:solarized_termcolors=256
+set background=dark
+colorscheme solarized
+
+" marginline
+highlight OverLength ctermfg=red
+match OverLength /\%81v.\+/
+set colorcolumn=80
+
+" gutter
+set number
+set autoread
+let g:gitgutter_realtime=1
+let g:gitgutter_eager=1
+
+" line markers
+set listchars=eol:¬
+set list=high
+
+" airline
+set laststatus=2
+let g:airline#extensions#tabline#enabled=1
+
