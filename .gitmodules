@@ -1,0 +1,3 @@
+[submodule "misc/hterm-patch"]
+	path = misc/hterm-patch
+	url = https://gist.github.com/9789131.git
