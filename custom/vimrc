@@ -31,7 +31,7 @@ let g:gitgutter_eager=1
 
 " line markers
 set listchars=eol:¬
-set list=high
+set list
 
 " airline
 set laststatus=2
