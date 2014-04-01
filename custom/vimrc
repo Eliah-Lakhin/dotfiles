@@ -13,10 +13,9 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
-" solarized
-let g:solarized_termcolors=256
+" colorsheme
 set background=dark
-colorscheme solarized
+colorscheme monochrome
 
 " marginline
 highlight OverLength ctermfg=red
