@@ -22,3 +22,6 @@
 [submodule "custom/vim/bundle/vim-airlineish"]
 	path = custom/vim/bundle/vim-airlineish
 	url = https://github.com/paranoida/vim-airlineish
+[submodule "custom/vim/bundle/supertab"]
+	path = custom/vim/bundle/supertab
+	url = https://github.com/ervandew/supertab

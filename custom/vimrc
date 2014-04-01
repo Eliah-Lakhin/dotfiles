@@ -2,9 +2,11 @@
 set nocompatible
 set backupdir=$HOME/.vimbackup//
 set directory=$HOME/.vimbackup//
-
-" buffers
+set listchars=eol:¬
+set list
 set hidden
+set incsearch
+set hlsearch
 
 " pathogen
 execute pathogen#infect()
@@ -38,10 +40,6 @@ set number
 set autoread
 let g:gitgutter_realtime=1
 let g:gitgutter_eager=1
-
-" line markers
-set listchars=eol:¬
-set list
 
 " airline
 set laststatus=2
