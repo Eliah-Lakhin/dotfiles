@@ -1,3 +1,11 @@
+" common
+set nocompatible
+set backupdir=$HOME/.vimbackup//
+set directory=$HOME/.vimbackup//
+
+" buffers
+set hidden
+
 " pathogen
 execute pathogen#infect()
 
@@ -12,6 +20,8 @@ set smartindent
 set tabstop=2
 set shiftwidth=2
 set expandtab
+set bs=indent,eol,start
+nnoremap J mzJ`z
 
 " colorsheme
 set background=dark
@@ -20,7 +30,8 @@ colorscheme monochrome
 " marginline
 highlight OverLength ctermfg=red
 match OverLength /\%81v.\+/
-set colorcolumn=80
+set colorcolumn=81
+hi ColorColumn ctermbg=233
 
 " gutter
 set number
@@ -35,4 +46,7 @@ set list
 " airline
 set laststatus=2
 let g:airline#extensions#tabline#enabled=1
+let g:airline_theme='airlineish'
+let g:airline_left_sep=''
+let g:airline_right_sep=''
 
