@@ -10,11 +10,16 @@ set hlsearch
 
 " pathogen
 execute pathogen#infect()
+Helptags
 
 " ctrlp
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_map='<c-p>'
 let g:ctrlp_cmd='CtrlP'
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\.git$',
+  \ 'file': '\.DS_Store$|\.ideal$|\.iml$'
+  \ }
 
 " syntax
 syntax on
@@ -47,4 +52,10 @@ let g:airline#extensions#tabline#enabled=1
 let g:airline_theme='airlineish'
 let g:airline_left_sep=''
 let g:airline_right_sep=''
+
+" easygrep
+let g:EasyGrepCommand=0
+let g:EasyGrepFilesToExclude=".git,.iml,.DS_Store,.iml"
+map <leader> vo GrepOptions
+set wildignore+=.git,.git/**,.idea,.idea/**,.DS_Store,/.iml,*.class,**/target/**
 
