@@ -15,13 +15,13 @@ Helptags
 
 " ctrlp
 set runtimepath^=~/.vim/bundle/ctrlp.vim
-let g:ctrlp_map='<c-p>'
+let g:ctrlp_map='<F12>'
 let g:ctrlp_cmd='CtrlP'
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\.git$',
   \ 'file': '\.DS_Store$|\.ideal$|\.iml$'
   \ }
-nnoremap <leader>. :CtrlPTag<cr>
+nnoremap <F11> :CtrlPTag<cr>
 
 " tagbar
 nnoremap <F8> :TagbarToggle<CR>
@@ -82,6 +82,9 @@ let g:airline_right_sep=''
 " easygrep
 let g:EasyGrepCommand=0
 let g:EasyGrepFilesToExclude=".git,.iml,.DS_Store,.iml"
-map <leader> vo GrepOptions
+nnoremap <F10> :GrepOptions<CR>
 set wildignore+=.git,.git/**,.idea,.idea/**,.DS_Store,/.iml,*.class,**/target/**
+
+" NERDTree
+nnoremap <F2> :NERDTreeToggle<CR>
 
