@@ -8,7 +8,8 @@ popd
 OSL_FILE_find_relative_path "$HOME" "$(pwd)" 
 home_rel=$return_value
 
-dotfiles=( "bashrc" "gitconfig" "linerc" "profile" "vim" "vimrc" "screenrc" )
+dotfiles=( "bashrc" "gitconfig" "linerc" "profile" "vim" "vimrc" "screenrc" 
+  "ctags" )
 for dotfile in "${dotfiles[@]}"
 do
   rm -rf $HOME/.$dotfile

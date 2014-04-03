@@ -24,9 +24,9 @@ nnoremap <leader>. :CtrlPTag<cr>
 
 " tagbar
 nnoremap <leader>b :TagbarToggle<CR>
-set tags=./.git/tags;
-map <F6> :!ctags -Ra -f ./.git/tags .<CR>
-map <F5> :!ctags -R -f ./.git/tags .<CR>
+set tags=./tags;
+map <F6> :!ctags -Ra -f ./tags .<CR>
+map <F5> :!ctags -R -f ./tags .<CR>
 
 " syntax
 syntax on
