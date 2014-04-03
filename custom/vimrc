@@ -20,6 +20,13 @@ let g:ctrlp_custom_ignore = {
   \ 'dir':  '\.git$',
   \ 'file': '\.DS_Store$|\.ideal$|\.iml$'
   \ }
+nnoremap <leader>. :CtrlPTag<cr>
+
+" tagbar
+nnoremap <leader>b :TagbarToggle<CR>
+set tags=./.git/tags;
+map <F6> :!ctags -Ra -f ./.git/tags .<CR>
+map <F5> :!ctags -R -f ./.git/tags .<CR>
 
 " syntax
 syntax on
