@@ -6,6 +6,7 @@ set listchars=eol:¬
 set list
 set hidden
 set incsearch
+set ignorecase
 set hlsearch
 set cursorline
 
@@ -86,5 +87,6 @@ nnoremap <F10> :GrepOptions<CR>
 set wildignore+=.git,.git/**,.idea,.idea/**,.DS_Store,/.iml,*.class,**/target/**
 
 " NERDTree
-nnoremap <F2> :NERDTreeToggle<CR>
+nnoremap <F2> :NERDTreeTabsToggle<CR>
+let g:NERDTreeQuitOnOpen=1
 
