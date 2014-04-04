@@ -90,3 +90,6 @@ set wildignore+=.git,.git/**,.idea,.idea/**,.DS_Store,/.iml,*.class,**/target/**
 nnoremap <F2> :NERDTreeTabsToggle<CR>
 let g:NERDTreeQuitOnOpen=1
 
+" Easymotion
+nmap s <Plug>(easymotion-s)
+

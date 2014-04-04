@@ -37,3 +37,6 @@
 [submodule "custom/vim/bundle/vim-nerdtree-tabs"]
 	path = custom/vim/bundle/vim-nerdtree-tabs
 	url = https://github.com/jistr/vim-nerdtree-tabs.git
+[submodule "custom/vim/bundle/vim-easymotion"]
+	path = custom/vim/bundle/vim-easymotion
+	url = https://github.com/Lokaltog/vim-easymotion
