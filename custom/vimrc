@@ -88,16 +88,17 @@ let g:airline_theme='airlineish'
 let g:airline_left_sep=''
 let g:airline_right_sep=''
 
-" easygrep
-let g:EasyGrepCommand=0
-let g:EasyGrepFilesToExclude=".git,.iml,.DS_Store,.iml"
-nnoremap <F4> :GrepOptions<CR>
-set wildignore+=.git,.git/**,.idea,.idea/**,.DS_Store,/.iml,*.class,**/target/**
+" quickfix
+nnoremap <F3> :cn<CR>
+nnoremap <F4> :cp<CR>
+nnoremap gr :vimgrep <cword> **/*
 
 " NERDTree
-nnoremap <F2> :NERDTreeTabsToggle<CR>
+nnoremap <F2> :NERDTreeFind<CR>
 let g:NERDTreeQuitOnOpen=1
 
 " Easymotion
 nmap s <Plug>(easymotion-s)
+vmap s <Plug>(easymotion-s)
+imap <leader>s <Plug>(easymotion-s)
 
