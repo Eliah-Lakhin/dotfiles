@@ -95,6 +95,7 @@ nnoremap gr :vimgrep <cword> **/*
 
 " NERDTree
 nnoremap <F2> :NERDTreeFind<CR>
+let g:NERDTreeWinSize=50
 let g:NERDTreeQuitOnOpen=1
 
 " Easymotion
