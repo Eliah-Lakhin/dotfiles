@@ -88,10 +88,12 @@ let g:airline_theme='airlineish'
 let g:airline_left_sep=''
 let g:airline_right_sep=''
 
-" quickfix
+" search n replace
 nnoremap <F3> :cn<CR>
 nnoremap <F4> :cp<CR>
-nnoremap gr :vimgrep <cword> **/*
+nnoremap zr :vimgrep <cword> **/*
+nnoremap gr :vimgrep 
+nnoremap zx :noh<CR>
 
 " NERDTree
 nnoremap <F2> :NERDTreeFind<CR>
