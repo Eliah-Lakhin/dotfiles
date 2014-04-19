@@ -105,3 +105,6 @@ nmap s <Plug>(easymotion-s)
 vmap s <Plug>(easymotion-s)
 imap <leader>s <Plug>(easymotion-s)
 
+" custom Keymap
+nmap <Enter> o<esc>j
+
