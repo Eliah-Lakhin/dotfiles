@@ -107,4 +107,7 @@ imap <leader>s <Plug>(easymotion-s)
 
 " custom Keymap
 nmap <Enter> o<esc>k
+nnoremap <C-h> :bp<cr>
+nnoremap <C-l> :bn<cr>
+nnoremap <C-x> :bd<cr>
 
