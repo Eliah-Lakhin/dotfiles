@@ -10,4 +10,14 @@ attrcolor b ".I"
 termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E38;5;%dm'
 defbce "on"
 
+bind j focus down
+bind k focus up
+
 shell -$SHELL
+
+screen bash
+split -v
+focus
+screen bash
+focus
+
