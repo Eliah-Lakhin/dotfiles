@@ -10,6 +10,7 @@ set ignorecase
 set hlsearch
 set cursorline
 set foldmethod=indent
+set shellpipe=>
 
 " fn keys
 let s:number=1
@@ -91,8 +92,8 @@ let g:airline_right_sep=''
 " search n replace
 nnoremap <F3> :cn<CR>
 nnoremap <F4> :cp<CR>
-nnoremap zr :vimgrep <cword> **/*
-nnoremap gr :vimgrep 
+nnoremap zr :Ack <cword>
+nnoremap gr :Ack 
 nnoremap zx :noh<CR>
 
 " NERDTree
@@ -104,6 +105,9 @@ let g:NERDTreeQuitOnOpen=1
 nmap s <Plug>(easymotion-s)
 vmap s <Plug>(easymotion-s)
 imap <leader>s <Plug>(easymotion-s)
+
+" Ack.vim
+let g:ack_autoclose = 1
 
 " custom Keymap
 nmap <Enter> o<esc>k

@@ -37,3 +37,6 @@
 [submodule "custom/vim/bundle/vim-easymotion"]
 	path = custom/vim/bundle/vim-easymotion
 	url = https://github.com/Lokaltog/vim-easymotion
+[submodule "custom/vim/bundle/ack.vim"]
+	path = custom/vim/bundle/ack.vim
+	url = git@github.com:mileszs/ack.vim.git

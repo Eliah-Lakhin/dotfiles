@@ -15,9 +15,5 @@ bind k focus up
 
 shell -$SHELL
 
-screen bash
 split -v
-focus
-screen bash
-focus
 
