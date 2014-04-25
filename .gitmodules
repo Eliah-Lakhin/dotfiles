@@ -40,3 +40,6 @@
 [submodule "custom/vim/bundle/ack.vim"]
 	path = custom/vim/bundle/ack.vim
 	url = git@github.com:mileszs/ack.vim.git
+[submodule "custom/vim/bundle/indentline"]
+	path = custom/vim/bundle/indentline
+	url = git@github.com:Yggdroot/indentLine.git
