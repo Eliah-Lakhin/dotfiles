@@ -93,8 +93,8 @@ let g:airline_right_sep=''
 " search n replace
 nnoremap <F3> :cn<CR>
 nnoremap <F4> :cp<CR>
-nnoremap zr :Ack <cword>
-nnoremap gr :Ack 
+nnoremap zr :vimgrep <cword> **/*
+nnoremap gr :vimgrep 
 nnoremap zx :noh<CR>
 
 " NERDTree
