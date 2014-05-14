@@ -2,6 +2,7 @@
 set nocompatible
 set backupdir=$HOME/.vimbackup//
 set directory=$HOME/.vimbackup//
+set noswapfile
 set listchars=eol:¬
 set list
 set hidden
